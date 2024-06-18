@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--
+  ***
+  Name: Suhani Arora + Oscar Wang
+  Date: May 5, 2024
+  Section: CSE 154 AD
+  TAs: Max Beard + Allan N Tran
+
+  This is an html page that displays the home page to out ecommerce website. It displays a search
+  bar with a dropdown to select what the user wants to search by. It also displays some popular
+  books and recent searches.
+  ***
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <script
+      src="https://kit.fontawesome.com/87f4126fa9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/logout.js"></script>
+    <script src="./index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+    >
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    >
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"
+    >
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Home page</title>
+  </head>
+  <body>
+    <aside>
+      <nav class="sidebar hide-on-mobile">
+        <div class="close-sidebar">
+          <span class="material-symbols-rounded">close</span>
+        </div>
+        <div class="profile">
+          <!-- logo from: https://www.flaticon.com/free-icon/bookstore_5900198 -->
+          <img src="../img/bookstore_logo.png" alt="Book Store">
+          <h1>BestBook</h1>
+          <p>Welcome!</p>
+        </div>
+        <nav class="side-nav">
+          <ul>
+            <li>
+              <a href="./index.html">
+                <span class="material-symbols-rounded icon">home</span>
+                <span class="page">Home</span>
+              </a>
+            </li>
+            <li class="hidden">
+              <a href="./html/order-history.html">
+                <span class="material-symbols-rounded icon">history</span>
+                <span class="page">Orders</span>
+              </a>
+            </li>
+            <li class="hidden">
+              <a href="./html/shopping-cart.html">
+                <span class="material-symbols-rounded icon">
+                  shopping_cart
+                </span>
+                <span class="page">Cart</span>
+              </a>
+            </li>
+            <li id="logout" class="hidden logout-btn">
+              <span class="material-symbols-rounded icon">logout</span>
+              <span class="page">Logout</span>
+            </li>
+            <li>
+              <a href="./html/login.html">
+                <span class="material-symbols-rounded icon">login</span>
+                <span class="page">Login</span>
+              </a>
+            </li>
+          </ul>
+          <p>All images and descriptions sourced from GoodReads</p>
+        </nav>
+      </nav>
+    </aside>
+    <main>
+      <header>
+        <form id="search-form">
+          <select>
+            <option value="all" selected>All</option>
+            <option value="author">Author</option>
+            <option value="title">Title</option>
+            <option value="genre">Genre</option>
+          </select>
+          <input type="search" id="search" placeholder="Select a category and search">
+          <button id="search-btn">Search</button>
+        </form>
+        <section id="search-result-msg" class="search-options">
+          <p id="search-result-msg-text">
+            Click on products to view more information and buy them.
+          </p>
+          <section>
+            <input type="checkbox" id="grid-check">
+            <label for="grid-check"> Grid view</label><br>
+          </section>
+        </section>
+        <p class="hidden error-msg" id="search-error">
+          Please enter something in the search bar.
+        </p>
+      </header>
+      <section id="books-list" class="books-list-style"></section>
+      <section id="books-info"></section>
+    </main>
+  </body>
+</html>

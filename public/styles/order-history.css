@@ -1,0 +1,39 @@
+/*
+  Name: Suhani Arora + Oscar Wang
+  Date: 05.05.2024
+  Section: CSE 154 AD
+
+  This is the order-history.css for styling the order history page
+*/
+
+.order {
+  background-color: #90E0EF;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.order-summary, .order-details div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.order-summary {
+  background-color: #CAF0F8;
+  gap: 30px;
+}
+
+.order-summary h2, .order-summary p {
+  font-size: 15px;
+}
+
+.order-details img {
+  width: 100px;
+  border: 0px;
+  padding: 0;
+  margin-right: 10px;
+}
+
+.order-summary, .order-details {
+  padding: 10px;
+}

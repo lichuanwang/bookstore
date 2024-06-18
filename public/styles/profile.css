@@ -1,0 +1,19 @@
+/*
+  Name: Suhani Arora + Oscar Wang
+  Date: 05.05.2024
+  Section: CSE 154 AD
+
+  This is the profile.css for styling the profile page
+*/
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+section {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}

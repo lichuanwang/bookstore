@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+  Name: Suhani Arora + Oscar Wang
+  Date: June 2, 2024
+  Section: CSE 154 AD
+
+  This is the order-history.html for displaying all orders that user bought in
+  the past
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+      src="https://kit.fontawesome.com/87f4126fa9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../scripts/order-history.js"></script>
+    <script src="../scripts/logout.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+    >
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    >
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"
+    >
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles/order-history.css">
+    <title>Order History</title>
+  </head>
+  <body>
+    <header>
+      <nav class="menu-icon">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="material-symbols-rounded"> menu </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <aside>
+      <nav class="sidebar hide-on-mobile">
+        <div class="close-sidebar">
+          <span class="material-symbols-rounded"> close </span>
+        </div>
+        <div class="profile">
+          <img src="../img/bookstore_logo.png" alt="Book Store" >
+          <h1>BestBook</h1>
+          <p>Welcome!</p>
+        </div>
+        <nav class="side-nav">
+          <ul>
+            <li>
+              <a href="../index.html">
+                <span class="material-symbols-rounded icon"> home </span>
+                <span class="page">Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="./order-history.html">
+                <span class="material-symbols-rounded icon"> history </span>
+                <span class="page">Orders</span>
+              </a>
+            </li>
+            <li>
+              <a href="./shopping-cart.html">
+                <span class="material-symbols-rounded icon">
+                  shopping_cart
+                </span>
+                <span class="page">Cart</span>
+              </a>
+            </li>
+            <li id="logout" class="logout-btn">
+              <span class="material-symbols-rounded icon">logout</span>
+              <span class="page">Logout</span>
+            </li>
+          </ul>
+          <p>All images and descriptions sourced from GoodReads</p>
+        </nav>
+      </nav>
+    </aside>
+    <main>
+      <h1>Your Orders</h1>
+      <section class="orders"></section>
+    </main>
+    <footer class="hidden"></footer>
+  </body>
+</html>

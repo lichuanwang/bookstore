@@ -1,0 +1,89 @@
+/*
+  Name: Oscar Wang + Suhani Arora
+  Date: 05.05.2024
+  Section: CSE 154 AD
+
+  This is the shopping-cart.css for styling the shopping cart page
+*/
+
+.main-section {
+  display: flex;
+  align-items: flex-start;
+}
+
+.shopping-cart {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.shopping-cart > p {
+  align-self: flex-end;
+  margin: 0;
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.item > p {
+  margin-top: 10px;
+}
+
+.item-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-grow: 2;
+}
+
+.item-description h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.item img {
+  width: 100px;
+  border: 0px;
+  padding: 0;
+  margin-right: 10px;
+}
+
+hr {
+  width: 100%; /* adjust the width to reduce the line length */
+}
+
+.sub-total {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.sub-total h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.sub-total button {
+  background-color: #0077b6;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
