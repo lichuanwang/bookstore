@@ -4,6 +4,9 @@ Welcome to the Online Bookstore! This is a web application that allows users to 
 
 ## Visit my website
 [My Online Bookstore](https://bookstore-3wuu.onrender.com/index.html)
+- To log in and try the different features, you can use the following credentials:
+  - Username: oscar.wang@example.com
+  - Password: password456
 
 ## Table of Contents
 
@@ -15,7 +18,7 @@ Welcome to the Online Bookstore! This is a web application that allows users to 
 
 ## Features
 
-- User Authentication: Sign up, log in, and log out functionalities.
+- User Authentication: Log in, and log out functionalities.
 - Book Browsing: View a list of available books with details.
 - Search: Search for books by title, author, or genre.
 - Shopping Cart: Add books to the cart and manage the cart contents.
@@ -61,7 +64,7 @@ Welcome to the Online Bookstore! This is a web application that allows users to 
   ```
 2. Open your browser and navigate to Online Bookstore to view the application.
 
-3. To log in, you can use the following credentials:
+3. To log in and try the different features, you can use the following credentials:
 - Username: oscar.wang@example.com
 - Password: password456
 
