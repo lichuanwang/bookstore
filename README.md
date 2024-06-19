@@ -64,10 +64,6 @@ Welcome to the Online Bookstore! This is a web application that allows users to 
   ```
 2. Open your browser and navigate to Online Bookstore to view the application.
 
-3. To log in and try the different features, you can use the following credentials:
-- Username: oscar.wang@example.com
-- Password: password456
-
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
